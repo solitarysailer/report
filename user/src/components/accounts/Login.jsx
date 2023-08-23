@@ -114,7 +114,7 @@ const Login = ({isUserAuthenticated}) => {
             setError('Something went wrong! please try again later');
         }
     }
-
+   // https://www.sesta.it/wp-content/uploads/2021/03/logo-blog-sesta-trasparente.png
 
 return (
     

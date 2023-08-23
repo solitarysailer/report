@@ -1,6 +1,6 @@
 
 import { Box, styled, Typography, Link } from '@mui/material';
-import { Instagram, Email } from '@mui/icons-material';
+import { LinkedIn,Email } from '@mui/icons-material';
 const Banner = styled(Box)`
      background-image: url(http://mrtaba.ir/image/bg2.jpg);
      width: 100%;
@@ -28,12 +28,12 @@ const Contacts = () => {
             <Wrapper>
                 <Typography variant="h3">Getting in touch is easy!</Typography>    
                 <Text variant="h5">
-                    Reach out to me on
-                    <Link href="https://www.instagram.com/codeforinterview/" color="inherit" target="_blank">
-                        <Instagram/>
+                    Reach out to us on
+                    <Link href="https://www.linkedin.com/in/anamika-singh-119a2a233/" color="inherit" target="_blank">
+                        <LinkedIn/>
                     </Link>
-                    or send me an Email 
-                    <Link href="mailto:codeforinterview@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
+                    or send an Email 
+                    <Link href="mailto:anamikasinghof1026@gmail.com?Subject=This is a subject" target="_blank" color="inherit">
                         <Email />
                     </Link>.
                 </Text>
