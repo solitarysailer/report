@@ -29,7 +29,7 @@ const PrivateRoute=({isAuthenticated,...props})=>{
   return(
       <DataProvider>
         <BrowserRouter>
-      < div style ={{marginTop : 64}}>
+      < div style ={{marginTop : 40}}>
         <Routes>
 
           

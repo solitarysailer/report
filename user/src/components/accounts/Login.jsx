@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import { TextField, Box, Button,Typography } from '@mui/material';
 import { API } from '../../service/api';
 import { DataContext } from '../../context/DataProvider';
-
 import {useNavigate} from 'react-router-dom';
 
 const Component =styled(Box)`
@@ -13,14 +12,14 @@ box-shadow: 5px 2px 5px 2px rgb(0 0 0/ 0.6);
 `;
 
 const Image = styled('img')({
-    width: 100,
+    width: 175,
     display: 'flex',
     margin: 'auto',
-    padding: '50px 0 0'
+    padding: '5px 0 0'
 });
 
 const Wrapper = styled(Box)`
-    padding: 25px 35px;
+    padding: 5px 30px;
     display: flex;
     flex: 1;
     overflow: auto;
@@ -32,7 +31,7 @@ const Wrapper = styled(Box)`
 
 const LoginButton = styled(Button)`
     text-transform: none;
-    background: #FB641B;
+    background: #d69f02;
     color: #fff;
     height: 48px;
     border-radius: 2px;
@@ -120,7 +119,7 @@ return (
     
         <Component>
             <Box>
-                <Image src="https://www.sesta.it/wp-content/uploads/2021/03/logo-blog-sesta-trasparente.png" alt="blog" />{
+                <Image src="https://thumbs.dreamstime.com/b/blogger-hashtag-poster-grunge-background-social-media-design-141138135.jpg" alt="blog" />{
                     account ==='login' ?
                 <Wrapper>
                     <TextField variant='standard' value={login.username} onChange={(e) => onValueChange(e)} name="username" label='Enter Username'></TextField>

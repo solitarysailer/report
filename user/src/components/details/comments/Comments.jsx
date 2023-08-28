@@ -37,16 +37,21 @@ const Comments = ({post}) =>{
     const [comments , setComments] = useState([]);
     const [toggle, setToggle] = useState(false);
 
-
-    useEffect(() => {
+    
+   useEffect(() => {
         const getData = async () => {
-            const response = await API.getAllComments(post._id);
-            if (response.isSuccess) {
-                setComments(response.data);
+            try {
+                const response = await API.getAllComments(post._id);
+                if (response.isSuccess) {
+                    setComments(response.data);
+                } 
+            } catch (error) {
+                console.error("Error fetching comments:", error);
             }
-        }
+        };
+    
         getData();
-    }, [ post,toggle]);
+    }, [post, toggle]);
 
 
     const handleChange = (e) => {
